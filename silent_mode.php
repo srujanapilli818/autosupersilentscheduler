@@ -3,15 +3,15 @@ session_start();
 
 // Redirect to login if the user is not authenticated
 if (!isset($_SESSION['username'])) {
-    header("Location: login3.html");
+    header("Location: login3.html"); 
     exit;
 }
 
 // === DATABASE CONNECTION & SETUP ===
 $servername = "sql100.infinityfree.com";
 $db_username = "if0_40648272"; 
-$db_password = "srujana0937"; 
-$dbname = "if0_40648272_silent_mode"; 
+$db_password = "silentmode1234"; 
+$dbname = "if0_40648272_silent_mode";
 
 // Create connection
 $conn = new mysqli($servername, $db_username, $db_password, $dbname);
